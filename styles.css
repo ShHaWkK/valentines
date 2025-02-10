@@ -167,4 +167,31 @@ button {
     font-weight: 600;
     transition: transform 0.1s ease;
 }
+
+.button:hover {
+    transform: scale(1.05);
+}
+#yes-btn {
+    color: white;
+    background-color: #57915e;
+}
+
+#no-btn {
+    color: white;
+    background-color: #db4e4e;
+    position: absolute;
+}
+
+/* Togepi Dance */
+@keyframes dance {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}
+
+#togepi-gif.dance {
+    animation: dance 0.5s infinite;
+}
+
 }  
